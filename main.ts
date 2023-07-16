@@ -83,12 +83,12 @@ let check_word = ['wakeup_uni', 'exitUni',"openElectricfan","closElectricfan","o
 namespace microbithlkv20 {
 let readserialdata='';
 
-    //% blockId=setserialMicrobit block="Initialize Microbit |TX %tx|RX %rx|Baud rate %baudrate "
+    //% blockId=setMicrobit block="Initialize Microbit |TX %tx|RX %rx|Baud rate %baudrate "
     //% tx.defl=SerialPin.P0
     //% rx.defl=SerialPin.P1
     //% weight=102
     //% blockExternalInputs = 1
-    export function setserialMicrobit(tx: SerialPin, rx: SerialPin, baudrate: BaudRate) {
+    export function setMicrobit(tx: SerialPin, rx: SerialPin, baudrate: BaudRate) {
         serial.redirect(
             tx,
             rx,
@@ -98,7 +98,7 @@ let readserialdata='';
         serial.setTxBufferSize(32)
         serial.setRxBufferSize(32)
     }
-    //% blockId=returnhlkserialdata1 block="read"
+    //% blockId=returnserialdata1 block="read"
     //% weight=101
     export function returnhlkserialdata1() {
            let a = serial.readBuffer(1)
