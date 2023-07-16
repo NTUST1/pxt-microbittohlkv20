@@ -88,7 +88,7 @@ let readserialdata='';
     //% rx.defl=SerialPin.P1
     //% weight=102
     //% blockExternalInputs = 1
-    export function setMicrobit(tx: SerialPin, rx: SerialPin, baudrate: BaudRate) {
+    export function setMicrobitserial(tx: SerialPin, rx: SerialPin, baudrate: BaudRate) {
         serial.redirect(
             tx,
             rx,
@@ -100,7 +100,7 @@ let readserialdata='';
     }
     //% blockId=returnserialdata1 block="read"
     //% weight=101
-    export function returnserialdata1() {
+    export function returnhlkserialdata1() {
            let a = serial.readBuffer(1)
            readserialdata = readserialdata + String.fromCharCode(a.getNumber(NumberFormat.UInt8LE, 0));
     }  
