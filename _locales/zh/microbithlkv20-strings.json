@@ -1,6 +1,6 @@
 {
     "microbithlkv20|block": "控制ESP32",
-    "microbithlkv20.setMicrobit|block": "設定Microbit |TX %tx|RX %rx|baudrate %baudrate",
-    "microbithlkv20.returnresponse|block": "比對辨識結果 %word ",
+    "microbithlkv20.setserialMicrobit|block": "設定Microbit |TX %tx|RX %rx|baudrate %baudrate",
+    "microbithlkv20.returhlknresponse|block": "比對辨識結果 %word ",
     "microbithlkv20.returnserialdata1|block": "讀取辨識結果"
 }
